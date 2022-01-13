@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Merriweather", serif;
+}
+
+.myBtnStyle {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  background: rgba(39, 39, 39, 0.74);
+  border-radius: 10px;
+  padding: 1rem;
+  color: rgb(219, 162, 17);
+  font-family: serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  transition: all 0.5s ease;
+  background-color: rgba(180, 180, 180, 0.4);
+}
+
+.sidebar header {
+  font-size: 2rem;
+  color: rgb(219, 162, 17);
+  text-align: center;
+  line-height: 7rem;
+  background: rgba(39, 39, 39, 0.4);
+  user-select: none;
+}
+
+.sidebar ul {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-left: 0;
+}
+
+button {
+  width: 12rem;
+  margin: 0.5rem 0;
+  border: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 0.5rem;
+}
+label #btn {
+  left: 4rem;
+  top: 2.5rem;
+  font-size: 2.5rem;
+  color: rgb(219, 162, 17);
+}
+
+label #cancel {
+  z-index: 5;
+  left: -195px;
+  font-size: 2rem;
+  color: rgb(219, 162, 17);
+  top: 30px;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+  transition: all 0.9s ease;
+}
+.bg {
+  height: 100vh;
+  background: url(/Portfolio-2.0/BankApp2.1/img/banApp-Bg.jpg) center/cover
+    no-repeat;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  /* align-items: center; */
+
+  position: relative;
+}
+#check:checked ~ .bg {
+  transition: all 0.5s ease;
+  margin-left: 250px;
+}
+
+.account-search-body input,
+.form-container input {
+  background: rgba(39, 39, 39, 0.74);
+}
+
+.view {
+  z-index: 11;
+  padding: 0 4rem;
+  background: rgba(39, 39, 39, 0.74);
+  width: 80%;
+  height: 100vh;
+  color: rgb(219, 162, 17);
+  font-size: 0.7rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+#check:checked ~ .view {
+  transition: all 0.5s ease-in-out;
+  margin-left: 250px;
+  width: 60%;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.account_search_results table {
+  color: white;
+}

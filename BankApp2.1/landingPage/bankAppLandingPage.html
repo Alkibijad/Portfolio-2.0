@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/Portfolio-2.0/BankApp2.1/landingPage/bankAppLandingPage.css"
+    />
+    <title>Bank App</title>
+  </head>
+  <body>
+    <section class="view-enter-page">
+      <div class="log-in-page" style="margin-right: 1rem">
+        <div class="enter-page">
+          <button class="btn log-in">Log in</button>
+          <button class="btn sign-up">Sign up</button>
+        </div>
+        <div class="notification-create-account">
+          <button class="btn myBtnStyle">Please sign up</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="view-signUp">
+      <div class="formHolder-box">
+        <div class="container form-background">
+          <div class="logInHeader" style="text-align: center">
+            <h1>Sign Up</h1>
+          </div>
+
+          <input
+            type="text"
+            name="firstName"
+            class="form-control"
+            placeholder="First name"
+          />
+
+          <input
+            type="text"
+            name="lastName"
+            class="form-control"
+            placeholder="Last name"
+          />
+
+          <input
+            type="text"
+            name="email"
+            class="form-control"
+            placeholder="Email"
+          />
+
+          <input
+            type="text"
+            name="userName"
+            class="form-control"
+            placeholder="Username"
+          />
+
+          <input
+            type="text"
+            name="password"
+            class="form-control"
+            placeholder="password"
+          />
+          <div class="password-charger"></div>
+
+          <div id="btnSubmit">
+            <button class="btn my-5 btnSubmit myBtnStyle" id="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view-login">
+      <div class="formHolder-box">
+        <div class="container form-background">
+          <div class="logInHeader" style="text-align: center">
+            <h1>LOG IN</h1>
+          </div>
+          <input
+            type="text"
+            id="login-username"
+            class="form-control"
+            placeholder="username"
+          />
+          <input
+            type="text"
+            id="login-password"
+            class="form-control"
+            placeholder="password"
+          />
+
+          <div id="btnSubmit">
+            <button
+              class="btn my-5 btnSubmit myBtnStyle login-submit"
+              id="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/Portfolio-2.0/BankApp2.1/landingPage/bankAppResetForm.js"></script>
+    <script src="/Portfolio-2.0/BankApp2.1/landingPage/bankAppCredentials.js"></script>
+    <script src="/Portfolio-2.0/BankApp2.1/landingPage/bankAppSignUp.js"></script>
+    <script src="/Portfolio-2.0/BankApp2.1/landingPage/bankAppFormVerification.js"></script>
+    <script src="/Portfolio-2.0/BankApp2.1/landingPage/bankAppSubmitForm.js"></script>
+    <script src="/Portfolio-2.0/BankApp2.1/landingPage/bankAppLandingPage.js"></script>
+    <script src="/Portfolio-2.0/BankApp2.1/landingPage/bankAppPasswordStrength.js"></script>
+  </body>
+</html>
