@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr--black: rgb(14, 14, 16);
+  --clr--gray: rgb(139, 139, 139);
+  --clr--ligthGray: rgb(222, 222, 222);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+      to bottom,
+      rgba(192, 192, 192, 0.1),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("./images/bg-img.png") center/cover no-repeat;
+  color: var(--clr--gray);
+  font-family: "Share Tech Mono", monospace;
+}
+
+img {
+  width: 400px;
+}
+
+.profiles-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.profile-pic {
+  border: 5px solid var(--clr--gray);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.name {
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 30px 10px rgb(139, 139, 139);
+}
+
+#photo {
+  width: 100%;
+}
+
+#file {
+  display: none;
+}
+
+.lyrics-container {
+  border: 10px solid red;
+  overflow: scroll;
+}
+.lyrics-boxes {
+  overflow: scroll;
+}
+
+#uploadBtn {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 30px;
+  background: var(--clr--gray);
+  display: none;
+}
+
+.enterNames-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enter-names {
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 30px 10px rgb(139, 139, 139);
+}
+
+.enter-playersName-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+  display: block;
+}
+
+.names-input {
+  border-radius: 5px;
+  box-shadow: 1px 1px 30px 10px rgb(139, 139, 139);
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.names-input:hover {
+  transform: scale(1.1);
+  transition: linear 0.8s all;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.entered-namesBtn button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 30px 10px rgb(139, 139, 139);
+  padding: 15px 25px;
+}
+.entered-namesBtn:hover button {
+  transform: scale(1.1);
+  transition: linear 0.8s all;
+}
+
+.countdown {
+  text-transform: uppercase;
+  height: 80%;
+  width: 80%;
+}
+.gameStarter {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 30px 10px rgb(139, 139, 139);
+  font-size: 30px;
+  background-color: rgba(20, 20, 20, 0.9);
+  opacity: 0.9;
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.counter-div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  background-color: rgba(20, 20, 20, 0.9);
+  box-shadow: 1px 1px 30px 10px rgb(139, 139, 139);
+}
+
+.go {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.game-container {
+  height: 70vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  width: 100%;
+  height: 100%;
+}
+
+.each-player-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+img {
+  width: 100px;
+}
+
+/* .dice-gray, */
+.up {
+  transition: 0.9s;
+  transform: scale(1.2);
+}
+
+.round {
+  text-transform: uppercase;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 30px 10px rgb(139, 139, 139);
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dice {
+  border: 5px solid grey;
+  padding: 5px;
+  border-radius: 50%;
+}
+.dice:hover {
+  transform: scale(1.1);
+  transition: linear 0.5s all;
+}
+
+.player img {
+  margin-bottom: 50px;
+}
+
+.score {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 30px 10px rgb(139, 139, 139);
+}
+
+.winner {
+  font-size: 60px;
+}
+
+@media screen and (min-width: 800px) {
+  .playerOne {
+    margin-right: 60px;
+  }
+  .playerTwo {
+    margin-left: 60px;
+  }
+  img {
+    width: 200px;
+  }
+  .score {
+    width: 200px;
+  }
+}

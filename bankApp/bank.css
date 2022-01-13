@@ -1,0 +1,17 @@
+section {
+  margin-top: 5px;
+}
+
+.header {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.buttons-container {
+  text-align: center;
+}
+
+.btnNav {
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 10px;
+}

@@ -1,0 +1,147 @@
+body {
+  background: rgb(54, 69, 79);
+  font-family: "Scheherazade New", serif;
+  color: rgb(73, 73, 73);
+}
+.header {
+  color: white;
+}
+
+.profile {
+  height: 100vh;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.profiles-container {
+  margin-top: 20px;
+  margin-left: auto;
+  background-color: rgb(219, 217, 217);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail {
+  text-align: center;
+  border: 1px solid rgb(153, 152, 152);
+  border-radius: 10px;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  margin: 10px;
+  padding: 15px;
+}
+.profile-card {
+  width: 90vw;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.button-container {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.btnBack {
+  width: 300px;
+  display: none;
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+.btnNext {
+  width: 300px;
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+@media screen and (min-width: 1200px) {
+  .profile {
+    height: 80vh;
+    display: flex;
+    position: relative;
+  }
+  .profile-card {
+    width: 80vh;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  }
+  .profiles-container {
+    height: 80vh;
+    width: 20vw;
+    margin-top: 20px;
+    margin-left: auto;
+    background-color: rgb(219, 217, 217);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .detail {
+    text-align: center;
+    border: 1px solid rgb(153, 152, 152);
+    border-radius: 10px;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+
+    margin: 10px;
+    padding: 15px;
+  }
+  .button-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .btnBack {
+    width: 300px;
+    display: none;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  }
+  .btnNext {
+    width: 300px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  }
+}
