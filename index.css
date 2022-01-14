@@ -277,8 +277,22 @@ video{
   justify-content: center;
   align-items: center;
 }
+.reference-galery img{
+  width: 300px;
+  
+}
+.reference-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.download-file{
+  width: 200px;
+}
 .reference-galery a{
   padding: 5px;
+  display: block;
 
 }
 .projects{
@@ -344,16 +358,12 @@ video{
   box-shadow: 5px 5px 10px 10px rgb(241, 250, 238);
 }
 
-
-
-
-
 .form-container{
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 input, .btn-contact{
   display: block;
@@ -362,7 +372,6 @@ input, .btn-contact{
 input, textarea{
   letter-spacing: 10px;
   font-family: 'Comforter Brush', cursive;
-  
   font-size: 1.25rem;
   padding: 10px 22rem 10px 5px;
   margin-bottom: 50px;
@@ -371,6 +380,9 @@ input, textarea{
   border: none;
   box-shadow: 5px 5px 10px 10px rgb(44, 75, 119);
   
+}
+#contact-input::placeholder{
+  color:white;
 }
 
 .btn-contact{

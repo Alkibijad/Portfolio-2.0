@@ -134,7 +134,9 @@
           <h1 id="full-name">Aleksandar "Sasha" Jovanovic</h1>
   
           <div class="expertise">
-            <h2 >Key Qualifications</h2>
+                  <a href="/Aleksandar Jovanovic Resume.pdf" download="Aleksandar Jovanovic - Resume" >
+                  <button class="download-file navBtn">Download PDF Resume</button>
+                </a>            <h2 >Key Qualifications</h2>
   
             <ul>
               <li>Visionary professional with an exceptional education, meaningful cultural experience, and a passion for elevating human potential </li>
@@ -279,14 +281,42 @@
     
       <section data-view="view-4" class="view section reference-container"       style="display: none">
         <div class="reference-galery text-center">
-            <a href="./imgReference/large_Darcy Klug.jpeg" data-lightbox="mygallary" data-title="Darcy Klug - President"><img src="./imgReference/small - Darcy Klug.jpg" ></a>
-            <a href="./imgReference/large_Darryl Goldstein.jpeg" data-lightbox="mygallary" data-title="Darryl Goldstein - National Health Advisor"><img src="./imgReference/small - Darryl Goldstein.png" ></a>
-            <a href="./imgReference/large_Dejan Ristic.jpeg" data-lightbox="mygallary" data-title="Dejan Ristic - Director of Nation Library of Serbia"><img src="./imgReference/small - Dejan Ristic.jpeg"></a>
-            <a href="./imgReference/large_Jacson Chen.jpeg" data-lightbox="mygallary" data-title="Jascon Chen - Chief Architect" ><img src="./imgReference/small - Jascon Chen.jpeg" ></a>
+
+          <div class="reference-box">
+            <a href="./imgReference/large_Darcy Klug.jpg" data-lightbox="mygallary" data-title="Darcy Klug - President" >
+                <img src="./imgReference/small - Darcy Klug.jpg" >
+                <a href="./imgReference/large_Darcy Klug.jpg" download="Darcy Klug - Letter of Recomendation.pdf" >
+                      <button class="download-file navBtn">Download File</button>
+                  </a>
+              </a>
+          </div>
+
+
+          <div class="reference-box">
+            <a href="./imgReference/large_Darryl Goldstein.jpg" data-lightbox="mygallary" data-title="Darryl Goldstein - National Health Advisor">
+                <img src="./imgReference/small - Darryl Goldstein.png" >
+                <a href="./imgReference/large_Darcy Klug.jpg" download="Darryl Goldstein - Letter of Recomendation.pdf" >
+                      <button class="download-file navBtn">Download File</button>
+                    </a>
+                  </a>
+                </div>
+                <div class="reference-box">
+                  <a href="./imgReference/large_Dejan Ristic.jpeg" data-lightbox="mygallary" data-title="Dejan Ristic - Director of Nation Library of Serbia">
+                    <img src="./imgReference/small - Dejan Ristic.jpeg" >
+                    <a href="./imgReference/large_Darcy Klug.jpg" download="Dejan Ristic - Letter of Recomendation.pdf" >
+                  <button class="download-file navBtn">Download File</button>
+                </a>
+              </a>
+            </div>
+            <div class="reference-box">
+              <a href="./imgReference/large_Jacson Chen.jpeg" data-lightbox="mygallary" data-title = "Jascon Chen - Chief Architect">
+                <img src="./imgReference/small - Jascon Chen.jpeg" >
+                <a href="./imgReference/large_Jacson Chen.jpeg" download="Jascon Chen - Letter of Recomendation.pdf" >
+                  <button class="download-file navBtn">Download File</button>
+                  </a>
+              </a>
+          </div>
         </div>
-
-
-
       </section>
     
       <section data-view="view-5" class="view section projects-container" style="display: none">
@@ -322,13 +352,13 @@
           <div class="form-container">
             <div class="form">
               <form action="https://formsubmit.co/4b08ce2fda732a8f337f7c1a9e9a3bb7" method="POST">
-                <input  type="text" name="name" placeholder="First Name"  required />
+                <input  id="contact-input"  type="text" name="name" placeholder="First Name"  required />
   
-                <input  type="text" name="last-name" placeholder="Last Name" required/>
+                <input  id="contact-input"  type="text" name="last-name" placeholder="Last Name" required/>
   
-                <input  type="email" name="email" placeholder="Your E-Mail" requred />
+                <input  id="contact-input" type="email" name="email" placeholder="Your E-Mail" requred />
   
-                <textarea  name="text" placeholder="type your message" cols="29" rows="7" ></textarea>
+                <textarea  id="contact-input" name="text" placeholder="type your message" cols="29" rows="7" ></textarea>
   
                   <button class=" btn-contact" type="submit">Send</button>
               </form>
