@@ -301,6 +301,7 @@ video{
   grid-template-columns: 1fr 1fr 1fr;
 }
 .project {
+  border: 1px solid white;
   color: white;
   display: flex;
   justify-content: center;
