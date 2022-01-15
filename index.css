@@ -39,11 +39,14 @@ h2,
 h4 {
   text-transform: capitalize;
   color: var(--clr--red);
+  font-size: 1.25rem;
+  padding: 10px 0;
 }
 
 li,
 p {
   color: var(--clr--grey);
+  font-size: 0.75rem;
 }
 .view li {
   list-style: square;
@@ -236,6 +239,7 @@ video {
   font-family: "Comforter Brush", cursive;
   letter-spacing: 20px;
   text-align: center;
+  font-size: 2rem;
 }
 .list-container {
   display: grid;
