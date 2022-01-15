@@ -69,6 +69,7 @@ i {
   bottom: 0;
   right: 0px;
   z-index: 1;
+  object-fit: cover;
 }
 .background-image-cover {
   width: 100vw;
@@ -364,23 +365,29 @@ video {
   align-items: center;
 }
 .form {
-  width: 500px;
-}
-input,
-.btn-contact {
-  display: block;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 input,
 textarea {
+  width: 300px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
   font-family: "Open Sans Condensed", sans-serif;
-  padding: 10px 2rem 10px 5px;
-  margin-bottom: 50px;
   border-radius: 10px;
   background: transparent;
   border: 1px solid white;
   color: white;
-  margin: 20px auto;
-  text-align: center;
+}
+
+input,
+.btn-contact {
+  display: block;
+}
+textarea {
+  resize: none;
 }
 #contact-input::placeholder {
   color: white;
@@ -402,10 +409,11 @@ textarea {
 }
 .social-media-icons {
   margin: 0 auto;
-  width: 40%;
+  width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   font-weight: 900;
 }
 @media screen and (min-width: 600px) {
