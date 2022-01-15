@@ -36,6 +36,7 @@ i {
 
 h1,
 h2,
+h3,
 h4 {
   text-transform: capitalize;
   color: var(--clr--red);
@@ -377,8 +378,7 @@ textarea {
   margin-bottom: 50px;
   border-radius: 10px;
   background: transparent;
-  border: none;
-  box-shadow: 5px 5px 10px 10px rgb(44, 75, 119);
+  border: 1px solid white;
   color: white;
   margin: 20px auto;
   text-align: center;
@@ -391,9 +391,8 @@ textarea {
   margin: 0 auto;
   padding: 10px 20px;
   background: transparent;
-  border: none;
+  border: 1px solid white;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px 10px rgb(44, 75, 119);
   color: white;
 }
 .form {
