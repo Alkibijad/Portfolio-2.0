@@ -30,8 +30,7 @@ a {
 }
 
 i {
-  color: var(--clr--grey);
-  font-size: 1rem;
+  color: var(--clr--red);
 }
 
 h1,
@@ -403,7 +402,7 @@ textarea {
 }
 .social-media-icons {
   margin: 0 auto;
-  width: 500px;
+  width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: center;
