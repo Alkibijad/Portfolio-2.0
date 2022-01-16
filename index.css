@@ -433,6 +433,7 @@ textarea {
   flex-direction: column;
 }
 .social-media-icons {
+  padding: 20px 0;
   margin: 0 auto;
   width: 300px;
   display: flex;
@@ -467,6 +468,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    transition: all 0.5s ease-in-out;
   }
 }
 

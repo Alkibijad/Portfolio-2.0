@@ -3,8 +3,15 @@ let views = document.querySelectorAll(".view");
 
 let toggleBtn = document.querySelector(".toggle-button");
 let navBar = document.querySelector(".navBar-Links");
+let navBarButtons = document.querySelectorAll(".navbar-item button");
 
-toggleBtn.addEventListener("mouseenter", function () {
+for (let i = 0; i < navBarButtons.length; i++) {
+  navBarButtons[i].addEventListener("click", function () {
+    navBar.classList.toggle("active");
+  });
+}
+
+toggleBtn.addEventListener("click", function () {
   navBar.classList.toggle("active");
 });
 
