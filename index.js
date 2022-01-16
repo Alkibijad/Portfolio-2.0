@@ -1,6 +1,13 @@
 let buttons = document.querySelectorAll("button");
 let views = document.querySelectorAll(".view");
 
+let toggleBtn = document.querySelector(".toggle-button");
+let navBar = document.querySelector(".navBar-Links");
+
+toggleBtn.addEventListener("click", function () {
+  navBar.classList.toggle("active");
+});
+
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", changeView);
 }
@@ -44,7 +51,3 @@ function changeView() {
   };
   videoPlayer.init();
 })();
-
-// if (tool === "Computer" && music !== "Rock" && !(project === "Car")) {
-//   thisDiv.style.color = "blue";
-// }
