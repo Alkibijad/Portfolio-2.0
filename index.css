@@ -386,11 +386,11 @@ video {
 }
 .form-container {
   height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-.form {
-  width: 300px;
-  margin-bottom: 100px;
-}
+
 input,
 textarea {
   width: 300px;
@@ -419,36 +419,34 @@ textarea {
   color: white;
 }
 
-.social-media-icons {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 @media (max-height: 600px) {
   .form-container {
-    border: 1px solid red;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #forma {
-    border: 1px solid orange;
-  }
-  .social-media-icons {
-    border: 1px solid red;
-    margin-bottom: 0;
-    padding: 0;
-  }
-  input,
-  textarea {
-    margin-bottom: 3px;
-  }
-  #btnContact {
-    margin: 0;
-    padding: 0;
-  }
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#forma {
+  height: 100%;
+  width: 100%;
+}
+#social-media-icons {
+  padding-bottom: 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+input,
+textarea {
+  margin-bottom: 5px;
 }
 
 @media (min-width: 500px) {
