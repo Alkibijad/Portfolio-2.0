@@ -385,15 +385,11 @@ video {
   box-shadow: 5px 5px 10px 10px rgb(241, 250, 238);
 }
 .form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
 .form {
   width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 100px;
 }
 input,
 textarea {
@@ -407,10 +403,6 @@ textarea {
   color: white;
 }
 
-input,
-.btn-contact {
-  display: block;
-}
 textarea {
   resize: none;
 }
@@ -426,20 +418,37 @@ textarea {
   border-radius: 10px;
   color: white;
 }
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 .social-media-icons {
-  padding: 20px 0;
   margin: 0 auto;
-  width: 300px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-weight: 900;
+}
+
+@media (max-height: 600px) {
+  .form-container {
+    border: 1px solid red;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #forma {
+    border: 1px solid orange;
+  }
+  .social-media-icons {
+    border: 1px solid red;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  input,
+  textarea {
+    margin-bottom: 3px;
+  }
+  #btnContact {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-width: 500px) {
