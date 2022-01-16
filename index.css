@@ -84,13 +84,13 @@ i {
 }
 .view {
   width: 90%;
+  height: 80vh;
   margin: 30px auto;
   position: relative;
   z-index: 2;
   box-shadow: 5px 5px 10px 10px rgb(44, 75, 119);
   overflow-y: scroll;
   color: var(--clr--grey);
-  height: 80vh;
   padding: 20px;
 }
 
@@ -385,7 +385,6 @@ video {
   box-shadow: 5px 5px 10px 10px rgb(241, 250, 238);
 }
 .form-container {
-  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -507,6 +506,7 @@ textarea {
   }
   .view {
     width: 70%;
+    height: 100%;
   }
   .navbar-section {
     width: 70%;

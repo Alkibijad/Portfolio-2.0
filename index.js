@@ -4,7 +4,7 @@ let views = document.querySelectorAll(".view");
 let toggleBtn = document.querySelector(".toggle-button");
 let navBar = document.querySelector(".navBar-Links");
 
-toggleBtn.addEventListener("click", function () {
+toggleBtn.addEventListener("mouseenter", function () {
   navBar.classList.toggle("active");
 });
 
